@@ -5,6 +5,8 @@
 #include "civ_bb01.h"
 #include "iostream"
 #include "cstring"
+#include <math.h>
+
 
 using std::cout;
 using std::endl;
@@ -12,6 +14,10 @@ using std::endl;
 string invertir(int* ,int );
 
 string civ_bb01::decodificar(string texto) {
+
+
+    string ret="";
+    int b,d=0,e=0,c=0;
 
     //Tokenizer
 
@@ -23,7 +29,22 @@ string civ_bb01::decodificar(string texto) {
     point = strtok(str,",");
     str[texto.size()]=NULL;
     while (point!=NULL){
-        
+
+        b=std::stoi( point );
+        while(b>=10) {
+            c = 0;
+            while (b >= 10) {
+                b = b - 10;
+                c++;
+
+            }
+            d = d + b * pow(2, e);
+            e++;
+            b = c;
+
+        }
+        d=d+c*pow(2,e);
+        ret+=d;
         point = strtok(NULL,",");
     }
 
