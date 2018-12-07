@@ -81,11 +81,8 @@ string civ_bb01::codificar(string texto) {
     string ret="";
     for (int k = 0; k < texto.size(); ++k) {
 
-        if (k==texto.size()-1){
-            ret+=testo[k];
-        }else {
             ret += testo[k] + "-";
-        }
+
     }
 
 

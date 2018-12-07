@@ -1,4 +1,9 @@
 #include <iostream>
+#include "Civilizacion_Alien.h"
+#include "civ_17arz.h"
+#include "civ_bb01.h"
+#include "civ_cc10.h"
+
 
 using std::cin;
 using std::cout;
@@ -34,7 +39,11 @@ int main() {
         }break;
 
         case 4:{
-
+            Civilizacion_Alien* cv=new civ_bb01();
+            string g = cv->codificar("bacaz");
+            //string r=cv->decodificar("emoc al es xirdoR");
+            cout<<g<<endl;
+           // cout<<r<<endl;
         }break;
 
         case 5:{

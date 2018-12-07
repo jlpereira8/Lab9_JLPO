@@ -6,16 +6,16 @@
 
 string civ_17arz::decodificar(string texto) {
     string ret="";
-    for (int i = 0; i <texto.size() ; ++i) {
-        ret+=texto.at(i);
+    for (int i = texto.size(); i >= 0 ; --i) {
+        ret+=texto[i];
     }
     return ret;
 }
 
 string civ_17arz::codificar(string texto) {
     string ret="";
-    for (int i = texto.size(); i <0 ; --i) {
-        ret+=texto.at(i);
+    for (int i = texto.size(); i >= 0 ; --i) {
+        ret+=texto[i];
     }
     return ret;
 }

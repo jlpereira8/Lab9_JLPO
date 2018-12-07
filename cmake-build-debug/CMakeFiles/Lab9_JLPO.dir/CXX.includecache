@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/jlpereira/Imágenes/Lab9_JLPO/main.cpp
+/home/jlpereira/Imágenes/Lab9_JLPO/Civilizacion_Alien.h
 iostream
+/home/jlpereira/Imágenes/Lab9_JLPO/iostream
+string
+/home/jlpereira/Imágenes/Lab9_JLPO/string
+
+/home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.cpp
+civ_bb01.h
+/home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.h
+iostream
+/home/jlpereira/Imágenes/Lab9_JLPO/iostream
+cstring
+/home/jlpereira/Imágenes/Lab9_JLPO/cstring
+math.h
 -
+
+/home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.h
+Civilizacion_Alien.h
+/home/jlpereira/Imágenes/Lab9_JLPO/Civilizacion_Alien.h
 

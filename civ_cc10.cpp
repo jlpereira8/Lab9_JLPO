@@ -9,7 +9,7 @@ string civ_cc10::decodificar(string texto) {
   string result;
   int resta = 17;
   int conver= 0;
-  for(int i = 0; i < texto.size(),i++){
+  for(int i = 0; i < texto.size();i++){
   //pasado a entero
   conver = texto[i];
   if(conver < 97){
@@ -28,7 +28,7 @@ string civ_cc10::codificar(string texto) {
 string result;
 int suma = 17;
 int conver= 0;
-for(int i = 0; i < texto.size(),i++){
+for(int i = 0; i < texto.size();i++){
   //pasado a entero
   conver = texto[i];
   if(conver > 122){
