@@ -38,7 +38,9 @@ for(int i = 0; i < texto.size();i++){
   if(conver >= 122){
     conver2 = conver - 122;
     conver3 = 97 + conver2;
+    conver = conver3;
   }
+
 
   //pasar a string
   result += conver;
