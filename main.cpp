@@ -26,10 +26,12 @@ int main() {
         }break;
 
         case 2:{
-
+          //codificar desde programa
+          
         }break;
 
         case 3:{
+          //decodificar desde programa
 
         }break;
 

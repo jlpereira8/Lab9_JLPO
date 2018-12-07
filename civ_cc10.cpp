@@ -11,7 +11,7 @@ string civ_cc10::decodificar(string texto) {
   int conver= 0;
   for(int i = 0; i < texto.size(),i++){
   //pasado a entero
-  conver = texto[i];
+  conver = (int) texto[i];
   if(conver < 97){
     conver = 97 - conver;
     conver = 122 - conver;
@@ -30,8 +30,8 @@ int suma = 17;
 int conver= 0;
 for(int i = 0; i < texto.size(),i++){
   //pasado a entero
-  conver = texto[i];
-  if(conver > 122){
+  conver = (int) texto[i];
+  if(conver >= 122){
     conver = conver - 122;
     conver = 97 + suma;
   }
