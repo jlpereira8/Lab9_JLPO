@@ -10,6 +10,10 @@
 
 class civ_bb01 : public Civilizacion_Alien{
 public:
+    civ_bb01();
+
+    civ_bb01(const string &nombre, const string &planeta, const string &lider, const int &edad);
+
     string codificar(string texto);
     string decodificar(string texto);
 };

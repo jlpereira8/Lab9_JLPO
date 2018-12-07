@@ -47,3 +47,8 @@ for(int i = 0; i < texto.size();i++){
 }
 return result;
 }
+
+civ_cc10::civ_cc10(const string &nombre, const string &planeta, const string &lider, const int &edad)
+        : Civilizacion_Alien(nombre, planeta, lider, edad) {}
+
+civ_cc10::civ_cc10() {}

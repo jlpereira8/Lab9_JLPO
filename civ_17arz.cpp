@@ -19,3 +19,8 @@ string civ_17arz::codificar(string texto) {
     }
     return ret;
 }
+
+civ_17arz::civ_17arz(const string &nombre, const string &planeta, const string &lider, const int &edad)
+        : Civilizacion_Alien(nombre, planeta, lider, edad) {}
+
+civ_17arz::civ_17arz() {}

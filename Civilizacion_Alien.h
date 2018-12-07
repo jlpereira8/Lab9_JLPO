@@ -15,9 +15,9 @@ private:
     string nombre;
     string planeta;
     string lider;
-    string edad;
+    int edad;
 public:
-    Civilizacion_Alien(const string &nombre, const string &planeta, const string &lider, const string &edad);
+    Civilizacion_Alien(const string &nombre, const string &planeta, const string &lider, const int &edad);
 
     Civilizacion_Alien();
 
@@ -33,9 +33,9 @@ public:
 
     void setLider(const string &lider);
 
-    const string &getEdad() const;
+    int getEdad() const;
 
-    void setEdad(const string &edad);
+    void setEdad(int edad);
 
     //metodos
     virtual string codificar(string texto);

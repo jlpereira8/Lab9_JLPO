@@ -57,6 +57,7 @@ string civ_bb01::decodificar(string texto) {
 
 string civ_bb01::codificar(string texto) {
     int* a=new int[texto.size()];
+    string g="";
     string* testo=new string[texto.size()];
     for (int i = 0; i < texto.size(); ++i) {
         int conv=texto.at(i);
@@ -71,9 +72,9 @@ string civ_bb01::codificar(string texto) {
             int nuevo=num/2;
             bin[aux]=mod;
             num=nuevo;
+            g+=nuevo;
             aux++;
         }
-
         string ret=invertir(bin,8);
         testo[j]=ret;
 
@@ -81,13 +82,22 @@ string civ_bb01::codificar(string texto) {
     string ret="";
     for (int k = 0; k < texto.size(); ++k) {
 
+        if (k==texto.size()-1){
+            ret+=testo[k];
+        }else {
             ret += testo[k] + "-";
-
+        }
     }
 
 
-    return ret;
+    return g;
 }
+
+civ_bb01::civ_bb01(const string &nombre, const string &planeta, const string &lider, const int &edad)
+        : Civilizacion_Alien(nombre, planeta, lider, edad) {}
+
+civ_bb01::civ_bb01() {}
+
 string invertir(int* x,int s){
     string o="";
     int aux=7;

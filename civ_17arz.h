@@ -12,6 +12,10 @@ class civ_17arz : public Civilizacion_Alien{
 public:
     string codificar(string texto);
     string decodificar(string texto);
+
+    civ_17arz();
+
+    civ_17arz(const string &nombre, const string &planeta, const string &lider, const int &edad);
 };
 
 

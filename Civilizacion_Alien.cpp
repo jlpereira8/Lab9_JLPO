@@ -4,9 +4,7 @@
 
 #include "Civilizacion_Alien.h"
 
-Civilizacion_Alien::Civilizacion_Alien(const string &nombre, const string &planeta, const string &lider,
-                                       const string &edad) : nombre(nombre), planeta(planeta), lider(lider),
-                                                             edad(edad) {}
+
 
 Civilizacion_Alien::Civilizacion_Alien() {}
 
@@ -48,6 +46,19 @@ string Civilizacion_Alien::decodificar(string texto) {
 
 string Civilizacion_Alien::codificar(string texto) {
     return "";
+}
+
+Civilizacion_Alien::Civilizacion_Alien(const string &nombre, const string &planeta, const string &lider,
+                                       const int &edad) {
+
+}
+
+int Civilizacion_Alien::getEdad() const {
+    return edad;
+}
+
+void Civilizacion_Alien::setEdad(int edad) {
+    Civilizacion_Alien::edad = edad;
 }
 
 
