@@ -103,7 +103,7 @@ int main() {
                 }
                 break;
             }case 2: {
-                    //codificar desde programa
+                //codificar desde programa
                 cout << "************Codificar*************" << endl;
                 cout << "1) civ_bb01 " << endl;
                 cout << "2) civ_cc10 " << endl;
@@ -135,9 +135,8 @@ int main() {
                 } else {
                     cout << "Dato no valido..." << endl;
                 }
-                }
-                break;
 
+            }break;
                 case 3: {
                     //decodificar desde programa
                     cout << "************Decodificar*************" << endl;
