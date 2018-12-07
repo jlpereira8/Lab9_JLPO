@@ -54,43 +54,40 @@ int main() {
     return 0;
 }
 
-string void codificar(){
-  //leer
-  ifstream archivo;
-  string data, seleccionado;
-
-  archivo.open("InfoCiv.txt",ios::in);
-  if (archivo.fail()) {
-    cout<<"No se pudo abrir archivo"<<endl;
-    exit(1);
+string void codificar(string datos){
+  //cesar
+string result;
+int suma = 17;
+int conver= 0;
+for(int i = 0; i < datos.size(),i++){
+  //pasado a entero
+  conver = datos[i];
+  if(conver > 122){
+    conver = conver - 122;
+    conver = 97 + suma;
   }
-
-  while (!archivo.eof()) {
-    getline(archivo,data);
-    seleccionado += data + "\n";
-  }
-
-  return seleccionado;
-  archivo.close();
-
+  conver += suma;
+  //pasar a string
+  result += conver;
+}
+return result;
 }
 
-string void decodificar(){
-  //leer
-  ifstream archivo;
-  string data, seleccionado;
-
-  archivo.open("InfoCiv.txt",ios::in);
-  if (archivo.fail()) {
-    cout<<"No se pudo abrir archivo"<<endl;
-    exit(1);
+string void decodificar(string datos){
+  //cesar
+string result;
+int resta = 17;
+int conver= 0;
+for(int i = 0; i < datos.size(),i++){
+  //pasado a entero
+  conver = datos[i];
+  if(conver < 97){
+    conver = 97 - conver;
+    conver = 122 - conver;
   }
-
-  while (!archivo.eof()) {
-    getline(archivo,data);
-    seleccionado += data + "\n";
-  }
-
-  return seleccionado;
-  archivo.close();
+  conver -= resta;
+  //pasar a string
+  result += conver;
+}
+return result;
 }
