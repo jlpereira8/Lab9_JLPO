@@ -11,48 +11,9 @@
 using std::cout;
 using std::endl;
 
-string invertir(int* ,int );
-
 string civ_bb01::decodificar(string texto) {
 
-
-    string ret="";
-    int b,d=0,e=0,c=0;
-
-    //Tokenizer
-
-    char str[texto.size()];
-    for (int i = 0; i < texto.size(); ++i) {
-        str[i]=texto.at(i);
-    }
-    char* point;
-    point = strtok(str,",");
-    str[texto.size()]=NULL;
-    while (point!=NULL){
-
-        b=std::stoi( point );
-        while(b>=10) {
-            c = 0;
-            while (b >= 10) {
-                b = b - 10;
-                c++;
-
-            }
-            d = d + b * pow(2, e);
-            e++;
-            b = c;
-
-        }
-        d=d+c*pow(2,e);
-        ret+=d;
-        point = strtok(NULL,",");
-    }
-
-    //
-
-
-
-    return ret;
+  return result;
 }
 
 string civ_bb01::codificar(string texto) {
@@ -107,3 +68,21 @@ string invertir(int* x,int s){
     return o;
 
 }
+  string result;
+  int size = 8;
+  for(int i = 0; i < texto.size();i++){
+    result = "";
+    //pasado a entero
+    conver = (int) texto[i];
+    for (int j = 0; j < size; j++) {
+      result += conver % 2;
+    }
+    result += "-";
+  }
+
+  for (int i = 0; i >= 0; i++) {
+    
+  }
+  return result;
+}
+

@@ -32,13 +32,6 @@ void Civilizacion_Alien::setLider(const string &lider) {
     Civilizacion_Alien::lider = lider;
 }
 
-const string &Civilizacion_Alien::getEdad() const {
-    return edad;
-}
-
-void Civilizacion_Alien::setEdad(const string &edad) {
-    Civilizacion_Alien::edad = edad;
-}
 
 string Civilizacion_Alien::decodificar(string texto) {
     return "";
