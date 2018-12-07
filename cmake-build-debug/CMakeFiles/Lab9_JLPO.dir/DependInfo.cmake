@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/jlpereira/Imágenes/Lab9_JLPO/Civilizacion_Alien.cpp" "/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.o"
   "/home/jlpereira/Imágenes/Lab9_JLPO/main.cpp" "/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles/Lab9_JLPO.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
