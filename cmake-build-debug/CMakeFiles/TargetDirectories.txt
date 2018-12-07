@@ -1,0 +1,3 @@
+/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles/Lab9_JLPO.dir
