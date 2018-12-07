@@ -150,6 +150,87 @@ Civilizacion_Alien.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.s
 .PHONY : Civilizacion_Alien.cpp.s
 
+civ_17arz.o: civ_17arz.cpp.o
+
+.PHONY : civ_17arz.o
+
+# target to build an object file
+civ_17arz.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o
+.PHONY : civ_17arz.cpp.o
+
+civ_17arz.i: civ_17arz.cpp.i
+
+.PHONY : civ_17arz.i
+
+# target to preprocess a source file
+civ_17arz.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.i
+.PHONY : civ_17arz.cpp.i
+
+civ_17arz.s: civ_17arz.cpp.s
+
+.PHONY : civ_17arz.s
+
+# target to generate assembly for a file
+civ_17arz.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.s
+.PHONY : civ_17arz.cpp.s
+
+civ_bb01.o: civ_bb01.cpp.o
+
+.PHONY : civ_bb01.o
+
+# target to build an object file
+civ_bb01.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o
+.PHONY : civ_bb01.cpp.o
+
+civ_bb01.i: civ_bb01.cpp.i
+
+.PHONY : civ_bb01.i
+
+# target to preprocess a source file
+civ_bb01.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.i
+.PHONY : civ_bb01.cpp.i
+
+civ_bb01.s: civ_bb01.cpp.s
+
+.PHONY : civ_bb01.s
+
+# target to generate assembly for a file
+civ_bb01.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.s
+.PHONY : civ_bb01.cpp.s
+
+civ_cc10.o: civ_cc10.cpp.o
+
+.PHONY : civ_cc10.o
+
+# target to build an object file
+civ_cc10.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o
+.PHONY : civ_cc10.cpp.o
+
+civ_cc10.i: civ_cc10.cpp.i
+
+.PHONY : civ_cc10.i
+
+# target to preprocess a source file
+civ_cc10.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.i
+.PHONY : civ_cc10.cpp.i
+
+civ_cc10.s: civ_cc10.cpp.s
+
+.PHONY : civ_cc10.s
+
+# target to generate assembly for a file
+civ_cc10.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.s
+.PHONY : civ_cc10.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +270,15 @@ help:
 	@echo "... Civilizacion_Alien.o"
 	@echo "... Civilizacion_Alien.i"
 	@echo "... Civilizacion_Alien.s"
+	@echo "... civ_17arz.o"
+	@echo "... civ_17arz.i"
+	@echo "... civ_17arz.s"
+	@echo "... civ_bb01.o"
+	@echo "... civ_bb01.i"
+	@echo "... civ_bb01.s"
+	@echo "... civ_cc10.o"
+	@echo "... civ_cc10.i"
+	@echo "... civ_cc10.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

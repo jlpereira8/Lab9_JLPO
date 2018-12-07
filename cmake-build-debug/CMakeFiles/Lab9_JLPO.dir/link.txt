@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Lab9_JLPO.dir/main.cpp.o CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.o  -o Lab9_JLPO 
+/usr/bin/c++  -g   CMakeFiles/Lab9_JLPO.dir/main.cpp.o CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.o CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o  -o Lab9_JLPO 

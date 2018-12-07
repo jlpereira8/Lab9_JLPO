@@ -90,6 +90,24 @@
 		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/Civilizacion_Alien.h">
 			<Option target="Lab9_JLPO"/>
 		</Unit>
+		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/civ_17arz.cpp">
+			<Option target="Lab9_JLPO"/>
+		</Unit>
+		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/civ_17arz.h">
+			<Option target="Lab9_JLPO"/>
+		</Unit>
+		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.cpp">
+			<Option target="Lab9_JLPO"/>
+		</Unit>
+		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.h">
+			<Option target="Lab9_JLPO"/>
+		</Unit>
+		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/civ_cc10.cpp">
+			<Option target="Lab9_JLPO"/>
+		</Unit>
+		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/civ_cc10.h">
+			<Option target="Lab9_JLPO"/>
+		</Unit>
 		<Unit filename="/home/jlpereira/Imágenes/Lab9_JLPO/main.cpp">
 			<Option target="Lab9_JLPO"/>
 		</Unit>

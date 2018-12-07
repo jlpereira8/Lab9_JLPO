@@ -83,19 +83,64 @@ CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jlpereira/Imágenes/Lab9_JLPO/Civilizacion_Alien.cpp -o CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.s
 
+CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o: CMakeFiles/Lab9_JLPO.dir/flags.make
+CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o: ../civ_cc10.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o -c /home/jlpereira/Imágenes/Lab9_JLPO/civ_cc10.cpp
+
+CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jlpereira/Imágenes/Lab9_JLPO/civ_cc10.cpp > CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.i
+
+CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jlpereira/Imágenes/Lab9_JLPO/civ_cc10.cpp -o CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.s
+
+CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o: CMakeFiles/Lab9_JLPO.dir/flags.make
+CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o: ../civ_bb01.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o -c /home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.cpp
+
+CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.cpp > CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.i
+
+CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jlpereira/Imágenes/Lab9_JLPO/civ_bb01.cpp -o CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.s
+
+CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o: CMakeFiles/Lab9_JLPO.dir/flags.make
+CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o: ../civ_17arz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o -c /home/jlpereira/Imágenes/Lab9_JLPO/civ_17arz.cpp
+
+CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jlpereira/Imágenes/Lab9_JLPO/civ_17arz.cpp > CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.i
+
+CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jlpereira/Imágenes/Lab9_JLPO/civ_17arz.cpp -o CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.s
+
 # Object files for target Lab9_JLPO
 Lab9_JLPO_OBJECTS = \
 "CMakeFiles/Lab9_JLPO.dir/main.cpp.o" \
-"CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.o"
+"CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.o" \
+"CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o" \
+"CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o" \
+"CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o"
 
 # External object files for target Lab9_JLPO
 Lab9_JLPO_EXTERNAL_OBJECTS =
 
 Lab9_JLPO: CMakeFiles/Lab9_JLPO.dir/main.cpp.o
 Lab9_JLPO: CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.o
+Lab9_JLPO: CMakeFiles/Lab9_JLPO.dir/civ_cc10.cpp.o
+Lab9_JLPO: CMakeFiles/Lab9_JLPO.dir/civ_bb01.cpp.o
+Lab9_JLPO: CMakeFiles/Lab9_JLPO.dir/civ_17arz.cpp.o
 Lab9_JLPO: CMakeFiles/Lab9_JLPO.dir/build.make
 Lab9_JLPO: CMakeFiles/Lab9_JLPO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab9_JLPO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jlpereira/Imágenes/Lab9_JLPO/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Lab9_JLPO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab9_JLPO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

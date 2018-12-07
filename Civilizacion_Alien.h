@@ -21,6 +21,23 @@ public:
 
     Civilizacion_Alien();
 
+    const string &getNombre() const;
+
+    void setNombre(const string &nombre);
+
+    const string &getPlaneta() const;
+
+    void setPlaneta(const string &planeta);
+
+    const string &getLider() const;
+
+    void setLider(const string &lider);
+
+    const string &getEdad() const;
+
+    void setEdad(const string &edad);
+
+    //metodos
     virtual string codificar(string texto);
     virtual string decodificar(string texto);
 
