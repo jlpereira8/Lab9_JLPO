@@ -52,7 +52,7 @@ string civ_bb01::decodificar(string texto) {
 
 
 
-    return "";
+    return ret;
 }
 
 string civ_bb01::codificar(string texto) {

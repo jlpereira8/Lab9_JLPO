@@ -5,9 +5,17 @@
 #include "civ_17arz.h"
 
 string civ_17arz::decodificar(string texto) {
-    return "";
+    string ret="";
+    for (int i = 0; i <texto.size() ; ++i) {
+        ret+=texto.at(i);
+    }
+    return ret;
 }
 
 string civ_17arz::codificar(string texto) {
-    return "";
+    string ret="";
+    for (int i = texto.size(); i <0 ; --i) {
+        ret+=texto.at(i);
+    }
+    return ret;
 }
