@@ -3,4 +3,4 @@ project(Lab9_JLPO)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab9_JLPO main.cpp)
+add_executable(Lab9_JLPO main.cpp Civilizacion_Alien.cpp Civilizacion_Alien.h)

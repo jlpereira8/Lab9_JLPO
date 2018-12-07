@@ -123,6 +123,33 @@ Lab9_JLPO/fast:
 	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/build
 .PHONY : Lab9_JLPO/fast
 
+Civilizacion_Alien.o: Civilizacion_Alien.cpp.o
+
+.PHONY : Civilizacion_Alien.o
+
+# target to build an object file
+Civilizacion_Alien.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.o
+.PHONY : Civilizacion_Alien.cpp.o
+
+Civilizacion_Alien.i: Civilizacion_Alien.cpp.i
+
+.PHONY : Civilizacion_Alien.i
+
+# target to preprocess a source file
+Civilizacion_Alien.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.i
+.PHONY : Civilizacion_Alien.cpp.i
+
+Civilizacion_Alien.s: Civilizacion_Alien.cpp.s
+
+.PHONY : Civilizacion_Alien.s
+
+# target to generate assembly for a file
+Civilizacion_Alien.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab9_JLPO.dir/build.make CMakeFiles/Lab9_JLPO.dir/Civilizacion_Alien.cpp.s
+.PHONY : Civilizacion_Alien.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lab9_JLPO"
+	@echo "... Civilizacion_Alien.o"
+	@echo "... Civilizacion_Alien.i"
+	@echo "... Civilizacion_Alien.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
