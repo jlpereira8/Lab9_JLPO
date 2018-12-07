@@ -29,14 +29,15 @@ string civ_cc10::codificar(string texto) {
 string result;
 int suma = 17;
 int conver= 0;
+int conver2 = 0;
+int conver3 = 0;
 for(int i = 0; i < texto.size();i++){
   //pasado a entero
   conver = (int) texto[i];
   conver += suma;
   if(conver >= 122){
-    conver = conver - 122;
-    conver = abs(conver);
-    conver = 97 + conver;
+    conver2 = conver - 122;
+    conver3 = 97 + conver2;
   }
 
   //pasar a string
