@@ -3,6 +3,7 @@
 //
 
 #include "civ_cc10.h"
+#include <cmath>
 
 string civ_cc10::decodificar(string texto) {
   //cesar
@@ -31,11 +32,13 @@ int conver= 0;
 for(int i = 0; i < texto.size();i++){
   //pasado a entero
   conver = (int) texto[i];
+  conver += suma;
   if(conver >= 122){
     conver = conver - 122;
-    conver = 97 + suma;
+    conver = abs(conver);
+    conver = 97 + conver;
   }
-  conver += suma;
+
   //pasar a string
   result += conver;
 }
