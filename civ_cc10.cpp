@@ -13,11 +13,11 @@ string civ_cc10::decodificar(string texto) {
   for(int i = 0; i < texto.size();i++){
   //pasado a entero
   conver = (int) texto[i];
-  if(conver < 97){
+  conver -= resta;
+  if(conver <= 97){
     conver = 97 - conver;
     conver = 122 - conver;
   }
-  conver -= resta;
   //pasar a string
   result += conver;
   }
