@@ -3,6 +3,8 @@
 using std::cin;
 using std::cout;
 using std::endl;
+using std::ifstream;
+using std::ostream;
 
 int main() {
 
@@ -50,4 +52,45 @@ int main() {
 
     } while(op != 7);
     return 0;
+}
+
+string void codificar(){
+  //leer
+  ifstream archivo;
+  string data, seleccionado;
+
+  archivo.open("InfoCiv.txt",ios::in);
+  if (archivo.fail()) {
+    cout<<"No se pudo abrir archivo"<<endl;
+    exit(1);
+  }
+
+  while (!archivo.eof()) {
+    getline(archivo,data);
+    seleccionado += data + "\n";
+  }
+
+  return seleccionado;
+  archivo.close();
+
+}
+
+string void decodificar(){
+  //leer
+  ifstream archivo;
+  string data, seleccionado;
+
+  archivo.open("InfoCiv.txt",ios::in);
+  if (archivo.fail()) {
+    cout<<"No se pudo abrir archivo"<<endl;
+    exit(1);
+  }
+
+  while (!archivo.eof()) {
+    getline(archivo,data);
+    seleccionado += data + "\n";
+  }
+
+  return seleccionado;
+  archivo.close();
 }
