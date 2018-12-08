@@ -194,7 +194,7 @@ int main() {
                 string texto,f;
                 cout << "Ingrese el texto a codificar: " << endl;
                 getline(cin,texto);
-
+                getline(cin,texto);
                 string g = "";
                 string tipo = "";
                 cout << "1) civ_bb01 " << endl;
@@ -253,7 +253,8 @@ int main() {
                 //int r=std::stoi( der );
                 cout << "Ingrese el texto a codificar: " << endl;
                 string texto;
-                cin >> texto;
+                getline(cin,texto);
+                getline(cin,texto);
                 string g = "";
                 string tipo = "";
                 cout << "1) civ_bb01 " << endl;
