@@ -7,6 +7,7 @@
 #include <sstream>
 #include <vector>
 
+using std::ofstream;
 using std::cin;
 using std::cout;
 using std::endl;
@@ -14,6 +15,8 @@ using std::ifstream;
 using std::ostream;
 using std::stringstream;
 using std::vector;
+using std::getline;
+using std::istream;
 
 int main() {
     vector<Civilizacion_Alien *> lista_civilizacion;
@@ -31,7 +34,7 @@ int main() {
         cin >> op;
         switch (op) {
             case 1: {
-                string fileName="InfoCiv.txt";
+                string fileName = "InfoCiv.txt";
                 ifstream inputFile;
                 inputFile.open(fileName.c_str());
                 if (!inputFile.is_open()) {
@@ -102,7 +105,8 @@ int main() {
 
                 }
                 break;
-            }case 2: {
+            }
+            case 2: {
                 //codificar desde programa
                 cout << "************Codificar*************" << endl;
                 cout << "1) civ_bb01 " << endl;
@@ -136,66 +140,189 @@ int main() {
                     cout << "Dato no valido..." << endl;
                 }
 
-            }break;
-                case 3: {
-                    //decodificar desde programa
-                    cout << "************Decodificar*************" << endl;
-                    cout << "1) civ_bb01 " << endl;
-                    cout << "2) civ_cc10 " << endl;
-                    cout << "3) civ_17arz " << endl;
-                    cout << "Ingrese su desicion" << endl;
-                    int dess;
-                    cin >> dess;
-                    if (dess == 1) {
-                        cout << "Ingrese un texto: " << endl;
-                        string texto;
-                        cin >> texto;
-                        Civilizacion_Alien *ca = new civ_bb01();
-                        string g = ca->decodificar(texto);
-                        cout << "Decodificado: " << g << endl;
-                    } else if (dess == 2) {
-                        cout << "Ingrese un texto: " << endl;
-                        string texto;
-                        cin >> texto;
-                        Civilizacion_Alien *ca = new civ_cc10();
-                        string g = ca->decodificar(texto);
-                        cout << "Decodificado: " << g << endl;
-                    } else if (dess == 3) {
-                        cout << "Ingrese un texto: " << endl;
-                        string texto;
-                        cin >> texto;
-                        Civilizacion_Alien *ca = new civ_17arz();
-                        string g = ca->decodificar(texto);
-                        cout << "Decodificado: " << g << endl;
-                    } else {
-                        cout << "Dato no valido..." << endl;
-                    }
-
+            }
+                break;
+            case 3: {
+                //decodificar desde programa
+                cout << "************Decodificar*************" << endl;
+                cout << "1) civ_bb01 " << endl;
+                cout << "2) civ_cc10 " << endl;
+                cout << "3) civ_17arz " << endl;
+                cout << "Ingrese su desicion" << endl;
+                int dess;
+                cin >> dess;
+                if (dess == 1) {
+                    cout << "Ingrese un texto: " << endl;
+                    string texto;
+                    cin >> texto;
+                    Civilizacion_Alien *ca = new civ_bb01();
+                    string g = ca->decodificar(texto);
+                    cout << "Decodificado: " << g << endl;
+                } else if (dess == 2) {
+                    cout << "Ingrese un texto: " << endl;
+                    string texto;
+                    cin >> texto;
+                    Civilizacion_Alien *ca = new civ_cc10();
+                    string g = ca->decodificar(texto);
+                    cout << "Decodificado: " << g << endl;
+                } else if (dess == 3) {
+                    cout << "Ingrese un texto: " << endl;
+                    string texto;
+                    cin >> texto;
+                    Civilizacion_Alien *ca = new civ_17arz();
+                    string g = ca->decodificar(texto);
+                    cout << "Decodificado: " << g << endl;
+                } else {
+                    cout << "Dato no valido..." << endl;
                 }
+
+            }
                 break;
 
-                case 4: {
+            case 4: {
+                cout << "************Codificar_Archivo*************" << endl;
+                ofstream archivo;
 
+                archivo.open("HistorialMensajes.txt", std::ios::app);
+
+                if (archivo.fail()) {
+                    cout << "No se pudo abrir el archivo..." << endl;
+                    exit(1);
                 }
+                //archivo<<"tecxto";
+                //int r=std::stoi( der );
+                string texto,f;
+                cout << "Ingrese el texto a codificar: " << endl;
+                getline(cin,texto);
+
+                string g = "";
+                string tipo = "";
+                cout << "1) civ_bb01 " << endl;
+                cout << "2) civ_cc10 " << endl;
+                cout << "3) civ_17arz " << endl;
+                cout << "Ingrese su desicion" << endl;
+                int dess;
+                cin >> dess;
+                if (dess == 1) {
+                    Civilizacion_Alien *ca = new civ_bb01();
+                    g = ca->codificar(texto);
+                    cout << "Codificado: " << g << endl;
+                    tipo = "civ_bb01";
+                } else if (dess == 2) {
+                    Civilizacion_Alien *ca = new civ_cc10();
+                    g = ca->codificar(texto);
+                    cout << "Codificado: " << g << endl;
+                    tipo = "civ_cc10";
+                } else if (dess == 3) {
+                    Civilizacion_Alien *ca = new civ_17arz();
+                    g = ca->codificar(texto);
+                    cout << "Codificado: " << g << endl;
+                    tipo = "civ_17arz";
+                } else {
+                    cout << "Dato no valido..." << endl;
+                }
+
+
+                //
+
+                archivo << "-----------------------------------------------" << endl;
+                archivo << endl;
+                archivo << tipo + ", CODIFICACION DESDE EL PROGRAMA" << endl;
+                archivo << "Entrada:" << endl;
+                archivo << texto << endl;
+                archivo << "Salida:" << endl;
+                archivo << g << endl;
+                archivo << endl;
+                archivo << "-----------------------------------------------";
+                cout << "Se edito el texto correctamente..." << endl;
+                archivo.close();
+            }
                 break;
 
-                case 5: {
+            case 5: {
+                cout << "************Decodificar_Archivo*************" << endl;
+                ofstream archivo;
 
+                archivo.open("HistorialMensajes.txt", std::ios::app);
 
-                    case 6: {
-
-                    }
-                    break;
-
-                    default:
-                        cout << "Saliendo..." << endl;
+                if (archivo.fail()) {
+                    cout << "No se pudo abrir el archivo..." << endl;
+                    exit(1);
                 }
+                //archivo<<"tecxto";
+                //int r=std::stoi( der );
+                cout << "Ingrese el texto a codificar: " << endl;
+                string texto;
+                cin >> texto;
+                string g = "";
+                string tipo = "";
+                cout << "1) civ_bb01 " << endl;
+                cout << "2) civ_cc10 " << endl;
+                cout << "3) civ_17arz " << endl;
+                cout << "Ingrese su desicion" << endl;
+                int dess;
+                cin >> dess;
+                if (dess == 1) {
+                    Civilizacion_Alien *ca = new civ_bb01();
+                    g = ca->decodificar(texto);
+                    cout << "dedodificado: " << g << endl;
+                    tipo = "civ_bb01";
+                } else if (dess == 2) {
+                    Civilizacion_Alien *ca = new civ_cc10();
+                    g = ca->decodificar(texto);
+                    cout << "decodificado: " << g << endl;
+                    tipo = "civ_cc10";
+                } else if (dess == 3) {
+                    Civilizacion_Alien *ca = new civ_17arz();
+                    g = ca->decodificar(texto);
+                    cout << "decodificado: " << g << endl;
+                    tipo = "civ_17arz";
+                } else {
+                    cout << "Dato no valido..." << endl;
+                }
+
+                archivo << "-----------------------------------------------" << endl;
+                archivo << endl;
+                archivo << tipo + ", DECODIFICACION DESDE EL PROGRAMA" << endl;
+                archivo << "Entrada:" << endl;
+                archivo << texto << endl;
+                archivo << "Salida:" << endl;
+                archivo << g << endl;
+                archivo << endl;
+                archivo << "-----------------------------------------------" << endl;
+                cout << "Se edito el texto correctamente..." << endl;
+                archivo.close();
+
+
+            }
+            case 6: {
+                ifstream archivo;
+                string texto;
+
+                archivo.open("HistorialMensajes.txt", std::ios::in);
+
+                if (archivo.fail()) {
+                    cout << "No se pudo abrir el archivo..." << endl;
+                    exit(1);
+                }
+
+                while (!archivo.eof()) {
+                    getline(archivo, texto);
+                    cout << texto << endl;
+                }
+                break;
+            }
+            default:
+                cout << "Saliendo..." << endl;
+
                 break;
                 op = 7;
-            }
-
+        }
         }
         while (op != 7);
         return 0;
     }
+
+
+
 
